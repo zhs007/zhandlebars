@@ -30,3 +30,21 @@ How
 如果是 file ，这里支持通配符。
 
 规则上，是会先把这个配置文件通过模板引擎 **Handlebars** 处理一轮，然后按顺序新建目录和文件，新建文件的时候，其实会自动把不存在的目录生成出来的，不需要特别处理目录。
+
+有了配置文件和模板文件外，使用起来就非常简单了。
+
+```
+"use strict";
+
+var path = require('path');
+var zhandlebars = require('../lib/index');
+
+let params = {projname: 'test', projname_lc: 'test'};
+zhandlebars.procProj(params, path.join(__dirname, './zrestify.json'), path.join(__dirname, './'));
+```
+
+使用到的第三方库
+---
+
+* 使用 **[glob](https://github.com/isaacs/node-glob)** 做文件通配符处理。
+* 使用 **[handlebars](https://github.com/wycats/handlebars.js/)** 模板做基本代码模板。
