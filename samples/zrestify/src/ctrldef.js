@@ -1,0 +1,13 @@
+"use strict";
+
+const CTRLID_REQ_LOGIN = 'login';
+
+exports.CTRLID_REQ_LOGIN = CTRLID_REQ_LOGIN;
+
+const CTRLID_RES_SERVCTRL = 'servctrl';
+const CTRLID_RES_COMMON = 'common';
+const CTRLID_RES_TOKEN = 'token';
+
+exports.CTRLID_RES_SERVCTRL = CTRLID_RES_SERVCTRL;
+exports.CTRLID_RES_COMMON = CTRLID_RES_COMMON;
+exports.CTRLID_RES_TOKEN = CTRLID_RES_TOKEN;

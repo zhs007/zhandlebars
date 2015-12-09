@@ -1,0 +1,14 @@
+{
+  "name": "{{projname}}",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/{{projname_lc}}.js"
+  },
+  "dependencies": {
+    "async": "*",
+    "mysql": "*",
+    "restify": "*",
+    "winston": "*"
+  }
+}
