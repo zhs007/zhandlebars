@@ -1,0 +1,38 @@
+{
+  "name": "zhandlebars",
+  "version": "0.1.0",
+  "latest": "0.1.0",
+  "description": "zhandlebars",
+  "keywords": [
+    "zhandlebars",
+    "handlebars",
+    "template",
+    "generator",
+    "proj"
+  ],
+  "preferGlobal": false,
+  "config": {
+    "publishtest": false
+  },
+  "homepage": "http://www.heysdk.com/",
+  "author": {
+    "name": "zhs007",
+    "email": "sssxueren@gmail.com",
+    "url": "http://www.heysdk.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhs007/zhandlebars"
+  },
+  "bugs": {
+    "url": "https://github.com/zhs007/zhandlebars/issues",
+    "email": "sssxueren@gmail.com"
+  },
+  "main": "./lib/index.js",
+  "dependencies": {
+    "glob": "*",
+    "handlebars": "*"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
