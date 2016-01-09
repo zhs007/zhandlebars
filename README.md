@@ -25,7 +25,7 @@ How
 ]
 ```
 
-上面可以看到，其实这个配置文件就是一个简单的json数组，每个元素是一条匹配条件，其中 name 表示目标文件或目录名，src 表示原始文件名，type 是类型，目前就 dir 和 file 2种，如果是 dir，就只是建目录而已，所以 src 可以给空字符串。
+上面可以看到，其实这个配置文件就是一个简单的json数组，每个元素是一条匹配条件，其中 name 表示目标文件或目录名，src 表示原始文件名，type 是类型，目前就 **dir**、**file**、**binfile** 3种，如果是 dir，就只是建目录而已，所以 src 可以给空字符串。
 
 如果是 file ，这里支持通配符。
 
@@ -42,6 +42,12 @@ var zhandlebars = require('../lib/index');
 let params = {projname: 'test', projname_lc: 'test'};
 zhandlebars.procProj(params, path.join(__dirname, './zrestify.json'), path.join(__dirname, './'));
 ```
+
+更新说明
+---
+* **ver 0.1.3**
+ * 支持 **binfile** 类型，对于不需要模板处理的文件都可以这样设置，会快一些。
+
 
 使用到的第三方库
 ---
