@@ -45,6 +45,9 @@ zhandlebars.procProj(params, path.join(__dirname, './zrestify.json'), path.join(
 
 更新说明
 ---
+* **ver 0.1.6**
+ * json配置文件里支持 **jscode** ，可以在处理这个文件的时候执行一段js脚本，主要是用来处理批量的参数的。
+
 * **ver 0.1.3**
  * 支持 **binfile** 类型，对于不需要模板处理的文件都可以这样设置，会快一些。
 
