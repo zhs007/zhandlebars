@@ -7,7 +7,7 @@
   {"name": "{{projname_lc}}/bin/{{projname_lc}}.js", "src": "zrestify/bin/main.js", "type": "file", "jscode": "params.scret = params.projname_lc"},
   {"name": "{{projname_lc}}/config.js", "src": "zrestify/config.js", "type": "file"},
   {"name": "{{projname_lc}}/package.json", "src": "zrestify/package.json", "type": "file"},
-  {"name": "{{projname_lc}}/lib/*.js", "src": "zrestify/lib/*.js", "type": "binfile"},
-  {"name": "{{projname_lc}}/src/*.js", "src": "zrestify/src/*.js", "type": "file"},
-  {"name": "{{projname_lc}}/ctrl/*.js", "src": "zrestify/ctrl/*.js", "type": "file"}
+  {"name": "{{projname_lc}}/lib/*.js", "src": "zrestify/lib/*.js", "type": "file", "overwrite": "w"},
+  {"name": "{{projname_lc}}/src/*.js", "src": "zrestify/src/*.js", "type": "file", "overwrite": "r"},
+  {"name": "{{projname_lc}}/ctrl/*.js", "src": "zrestify/ctrl/*.js", "type": "file", "overwrite": "w"}
 ]

@@ -6,6 +6,8 @@ var apicore = require('../src/apicore');
 var adminmgr = require('../src/adminmgr');
 var sessionmgr = require('../lib/sessionmgr');
 var fs = require("fs");
+//<--require Begin
+//<--require End
 
 class Ctrl_Login extends apicore.BaseAPICtrl {
     constructor() {
@@ -23,7 +25,9 @@ class Ctrl_Login extends apicore.BaseAPICtrl {
 
         res.result.send();
 
+//<--onProc Begin
         next();
+//<--onProc End
     }
 }
 
